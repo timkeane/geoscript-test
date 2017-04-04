@@ -18,6 +18,7 @@ class ProximityTest extends Specification {
 		when:
 			Feature outFeature = layer.getFeatures()[0]
 		then:
+			inFeature.getId() == 'myFID' 
 			inFeature.getId() == outFeature.getId() 
 	}
 }
